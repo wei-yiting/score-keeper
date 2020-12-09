@@ -159,7 +159,7 @@ h1 {
   width: 100%;
   margin-top: 2.5rem;
   background-color: #bfd7ea;
-  border-color: #bfd7ea;
+  border: 2px solid #bfd7ea;
   color: #0b3954;
   outline: none;
 }
