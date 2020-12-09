@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;800&family=Roboto:wght@400;700&display=swap" rel="stylesheet">    <section class="container">
+        <h1>Score Keeper</h1>
+        <div class="scoreBoard">
+            <span id="p1score">0</span>
+            <span>to</span>
+            <span id="p2score">0<span>
+        </div>
+        <div class="scoreSelect">
+            <label for="toScore">Playing To</label>
+            <select name="toScore" id="toScore">
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="9">9</option>
+                <option value="11">11</option>
+                <option value="15">15</option>
+                <option value="21">21</option>
+            </select>
+        </div>
+        <div class="scoreBtn">
+            <button id="addP1">Player One +1</button>
+            <button id="addP2">Player Two +1</button>
+            <button id="reset">Reset</button>
+        </div>
+    </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>

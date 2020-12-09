@@ -1,0 +1,143 @@
+/* ====== color pallate =========
+background - dark blue : #0B3954
+minor content - light blue : #BFD7EA
+major content - white : #FEFFFE
+win : #FF6663
+
+
+*/
+
+body {
+  background-color: #0b3954;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  color: #bfd7ea;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+
+.scoreBoard,
+.scoreSelect {
+  display: flex;
+  width: 100%;
+}
+
+.scoreBoard {
+  font-size: 10rem;
+  justify-content: space-evenly;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
+  align-items: center;
+  line-height: 1.5em;
+  color: #fefffe;
+}
+
+#p1score,
+#p2score {
+  font-weight: 800;
+  font-size: 15rem;
+}
+
+.scoreBoard .winner {
+  color: #e0ff4f;
+}
+
+.scoreBoard .loser {
+  color: #146290;
+}
+
+.scoreSelect {
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+.scoreSelect label {
+  margin-right: 0.5em;
+}
+
+#toScore option {
+  background-color: #0b3954;
+  color: #bfd7ea;
+  font-size: 1.5rem;
+}
+
+.scoreBtn {
+  margin-top: 3rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.scoreBtn button {
+  font-size: 2rem;
+  padding: 0.5em;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1em;
+  border-radius: 0.3em;
+  outline: none;
+}
+
+#addP1,
+#addP2 {
+  flex-basis: 48%;
+  font-weight: 700;
+  border: 4px solid #fefffe;
+  background-color: transparent;
+  color: #fefffe;
+}
+
+#addP1:hover,
+#addP2:hover {
+  /* background-color: #365946; */
+  transform: translateY(-3px);
+  box-shadow: 0 3px 5px #fefffecc;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#addP1:active,
+#addP2:active {
+  background-color: #072536;
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+#addP1[disabled],
+#addP2[disabled] {
+  /* background-color: #365946; */
+  transform: translateY(0);
+  box-shadow: none;
+  border-color: #146290;
+  color: #146290;
+}
+
+#reset {
+  font-size: 1.3rem;
+  flex-grow: 1;
+  width: 100%;
+  margin-top: 1.5rem;
+  background-color: #bfd7ea;
+  border-color: #bfd7ea;
+  color: #0b3954;
+  outline: none;
+}
+
+#reset:hover {
+  background-color: transparent;
+  color: #fefffe;
+  border: 2px solid #fefffe;
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
